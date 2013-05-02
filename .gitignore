@@ -7,3 +7,10 @@ project/target
 xsbt-cucumber-plugin.sublime-workspace
 deploy-repo
 
+# don't commit the intellij stuff, run "sbt idea" to generate
+*.ipr
+*.iml
+*.iws
+.idea/
+out/
+.idea_modules/

@@ -8,3 +8,9 @@ Feature: Cucumber in Jar Project
     Given an SBT project
     When the cucumber task is called
     Then Cucumber is executed against the features and step definitions
+
+  Scenario: Data Table works
+    Given a Data Table:
+      | col |
+      | val |
+    Then Data Table works!

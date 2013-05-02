@@ -17,11 +17,16 @@ object Settings {
 object Dependencies {
 
   private val CucumberVersionForScala2_9 = "1.0.9"
-  private val CucumberVersionForScala2_10 = "1.1.1"
+  private val CucumberVersionForScala2_10 = "1.1.3"
 
   def cucumberScala(scalaVersion: String) = {
-    def cucumberVersion = if ( scalaVersion.startsWith("2.10") ) CucumberVersionForScala2_10 else CucumberVersionForScala2_9
-    "info.cukes" % "cucumber-scala" % cucumberVersion % "compile"      
+    val cucumberVersion =
+      if (scalaVersion.startsWith("2.10"))
+        CucumberVersionForScala2_10
+      else
+        CucumberVersionForScala2_9
+
+    "info.cukes" % "cucumber-scala" % cucumberVersion % "compile"
   }
   val cucumber = "info.cukes" % "cucumber-scala" % "1.0.9" % "compile"
 
