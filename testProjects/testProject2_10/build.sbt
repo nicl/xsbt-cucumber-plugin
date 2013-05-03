@@ -1,6 +1,6 @@
 name := "test-project2_10"
 
-version := "0.7.2"
+version := "0.7.3"
 
 organization := "templemore"
 
