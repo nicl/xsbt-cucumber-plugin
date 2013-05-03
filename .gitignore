@@ -14,3 +14,4 @@ deploy-repo
 .idea/
 out/
 .idea_modules/
+.history
